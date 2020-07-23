@@ -25,7 +25,7 @@ const App: React.FunctionComponent = () => {
 
   const WelcomeRoute=()=>{
     if(name.length<1||password.length<1) {
-      setItem(<div style={{color:"red"}}>Please enter both name and password</div>)
+      setItem(<div style={{color:"red"}}>Please enter both name and secret code</div>)
       return
     }
     if(password===vpassword && name.toLowerCase()==="vinuth"){
@@ -53,12 +53,12 @@ const App: React.FunctionComponent = () => {
       <Stack {...columnProps}>
         {Login &&
         <>
-        <TextField label="UserName " required  onChange={(e)=>{//@ts-ignore
+        <TextField label="Name " required  onChange={(e)=>{//@ts-ignore
          setName(e.target.value)}} />
-        <TextField label="Password " required type="password" onChange={(e)=>{//@ts-ignore
+        <TextField label="Secret Code " required type="password" onChange={(e)=>{//@ts-ignore
         setPassword(e.target.value)}} onEnter={()=>{WelcomeRoute()}}
         />
-        <PrimaryButton text="Welcome!" color="#333333" onClick={()=>{WelcomeRoute()}} />
+        <PrimaryButton text="See what my Interns have for me!" color="#333333" onClick={()=>{WelcomeRoute()}} />
         </>}
         {item}
       </Stack>

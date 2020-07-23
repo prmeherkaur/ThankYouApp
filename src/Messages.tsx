@@ -2,6 +2,9 @@ import React from 'react';
 import { Card, ICardTokens} from '@uifabric/react-cards';
 import { FontWeights } from '@uifabric/styling';
 import {
+  ICardStyles,
+} from '@uifabric/react-cards';
+import {
   Persona,
   Text,
   ITextStyles,
@@ -15,12 +18,20 @@ const siteTextStyles: ITextStyles = {
   root: {
     color: '#025F52',
     fontWeight: FontWeights.semibold,
+    margin: '5px 0px'
   },
 };
 const descriptionTextStyles: ITextStyles = {
   root: {
     color: '#333333',
     fontWeight: FontWeights.semibold,
+  },
+};
+const cardStyles: ICardStyles = {
+  root: {
+    backgroundColor: 'white',
+    margin: '5px 0px',
+    borderRadius: '10px' 
   },
 };
 export const Vinuth:React.FunctionComponent=()=> {
@@ -31,6 +42,7 @@ export const Vinuth:React.FunctionComponent=()=> {
             </Text>
           
             <Card
+          styles={cardStyles}
           aria-label="Clickable vertical card with image bleeding at the center of the card"
           tokens={cardTokens}
         >
@@ -41,11 +53,12 @@ export const Vinuth:React.FunctionComponent=()=> {
             <Text variant="medium" styles={siteTextStyles}>
             Hey Vinuth,
             </Text>
-            <Text styles={descriptionTextStyles}>You've been a true mentor to all of us. Everytime we  got stuck, you were there to guide us and to lead us along. You always supported us in all of our demos and you never scolded us despite our blunders. I would've never expected such generosity from you. Even when everything was seemingly impossible to complete, you were there to take our hand and guide us through it.Many times, we would work harder just because we knew you had supported us even in oddest of times, and that we couldn't let you down after all that you had done for us. You've taught me a lot more about leadership in this internship than I ever expected to learn. Thanks a ton!</Text>
+            <Text styles={descriptionTextStyles}>You've been a true mentor to all of us. Everytime we  got stuck, you were there to guide us and to lead us along. You always supported us in all of our demos and you never scolded us despite our blunders. I would've never expected such generosity from you. Even when everything was seemingly impossible to complete, you were there to take our hand and guide us through it. Many times, we would work harder just because we knew you had supported us even in oddest of times, and that we couldn't let you down after all that you had done for us. You've taught me a lot more about leadership in this internship than I ever expected to learn. Thanks a ton!</Text>
        
           </Card.Section>
         </Card>
          <Card
+          styles={cardStyles}
           aria-label="Clickable vertical card with image bleeding at the center of the card"
           tokens={cardTokens}
         >
@@ -62,6 +75,7 @@ export const Vinuth:React.FunctionComponent=()=> {
         </Card>
        
         <Card
+          styles={cardStyles}
           aria-label="Clickable vertical card with image bleeding at the center of the card"
           tokens={cardTokens}
         >
@@ -77,6 +91,7 @@ export const Vinuth:React.FunctionComponent=()=> {
           </Card.Section>
         </Card>
         <Card
+          styles={cardStyles}
           aria-label="Clickable vertical card with image bleeding at the center of the card"
           tokens={cardTokens}
         >
@@ -103,6 +118,7 @@ export const Shishir:React.FunctionComponent=()=> {
          Thank you so much for your guidance!
        </Text>
        <Card
+     styles={cardStyles}
      aria-label="Clickable vertical card with image bleeding at the center of the card"
      tokens={cardTokens}
    >
@@ -118,6 +134,7 @@ export const Shishir:React.FunctionComponent=()=> {
      </Card.Section>
    </Card>
     <Card
+     styles={cardStyles}
      aria-label="Clickable vertical card with image bleeding at the center of the card"
      tokens={cardTokens}
    >
@@ -128,12 +145,13 @@ export const Shishir:React.FunctionComponent=()=> {
      <Text variant="medium" styles={siteTextStyles}>
      Hey Shishir
        </Text>
-       <Text styles={descriptionTextStyles}>I have was always admired your coding skills and the knowledge you have. Would love to take you as an inspiration and achieve more and more! Thanks for all your efforts and the support you gave despite the odd timings. </Text>
+       <Text styles={descriptionTextStyles}>I have always admired your coding skills and the knowledge you have. Would love to take you as an inspiration and achieve more and more! Thanks for all your efforts and the support you gave despite the odd timings. </Text>
   
      </Card.Section>
    </Card>
   
    <Card
+     styles={cardStyles}
      aria-label="Clickable vertical card with image bleeding at the center of the card"
      tokens={cardTokens}
    >
@@ -149,6 +167,7 @@ export const Shishir:React.FunctionComponent=()=> {
      </Card.Section>
    </Card>
    <Card
+     styles={cardStyles}
      aria-label="Clickable vertical card with image bleeding at the center of the card"
      tokens={cardTokens}
    >
@@ -173,6 +192,7 @@ export const Srikanth:React.FunctionComponent=()=> {
          Thank you so much for always being there for us!
        </Text>
        <Card
+     styles={cardStyles}
      aria-label="Clickable vertical card with image bleeding at the center of the card"
      tokens={cardTokens}
    >
@@ -188,6 +208,7 @@ export const Srikanth:React.FunctionComponent=()=> {
      </Card.Section>
    </Card>
     <Card
+     styles={cardStyles}
      aria-label="Clickable vertical card with image bleeding at the center of the card"
      tokens={cardTokens}
    >
@@ -206,6 +227,7 @@ export const Srikanth:React.FunctionComponent=()=> {
    </Card>
 
    <Card
+     styles={cardStyles}
      aria-label="Clickable vertical card with image bleeding at the center of the card"
      tokens={cardTokens}
    >
@@ -221,6 +243,7 @@ export const Srikanth:React.FunctionComponent=()=> {
      </Card.Section>
    </Card>
    <Card
+     styles={cardStyles}
      aria-label="Clickable vertical card with image bleeding at the center of the card"
      tokens={cardTokens}
    >
