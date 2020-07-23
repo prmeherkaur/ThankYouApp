@@ -9,32 +9,32 @@ const stackTokens = { childrenGap: 50 };
 const stackStyles: Partial<IStackStyles> = { root: { width: 650 } };
 const columnProps: Partial<IStackProps> = {
   tokens: { childrenGap: 15 },
-  styles: { root: { width: 200,margin:2 } },
+  styles: { root: {width:200,margin:10 } },
 };
 
 const App: React.FunctionComponent = () => {
   const [name,setName]=useState<String>("");
   const [password,setPassword]=useState<String>("");
-  const passwordcheck="hello";
+  const vpassword="vinuth";
+  const shpassword="shishir";
+  const srpassword="srikanth";
   const [item,setItem]=useState(
     <div></div>
   );
   const [Login,setLogin]=useState<Boolean>(true);
 
   const WelcomeRoute=()=>{
-    if(password===passwordcheck){
-      console.log("here  hello");
+    if(password===vpassword && name.toLowerCase()==="vinuth"){
       setLogin(false);
-      if(name==="Vinuth"){
-        setItem(<Vinuth/>)
-      }
-      else if(name==="Shishir"){
-        setItem(<Shishir/>)
-      }
-      else if(name==="Srikanth"){
-        setItem(<Srikanth/>)
-      }
+      setItem(<Vinuth/>)
     }
+    else if(password===shpassword &&name.toLowerCase()==="shishir"){
+        setItem(<Shishir/>)
+    }
+    else if(password===srpassword && name.toLowerCase()==="srikanth"){
+        setItem(<Srikanth/>)
+    }
+
     else{
       console.log("nope  hello");
       setItem(<div style={{color:"red"}}> Did you already forget us :(</div>)
@@ -52,7 +52,7 @@ const App: React.FunctionComponent = () => {
         <TextField label="Password " required type="password" onChange={(e)=>{//@ts-ignore
         setPassword(e.target.value)}}
         />
-        <PrimaryButton text="Welcome!"  onClick={()=>{WelcomeRoute()}}/>
+        <PrimaryButton text="Welcome!" color="#333333" onClick={()=>{WelcomeRoute()}}/>
         </>}
         {item}
       </Stack>
