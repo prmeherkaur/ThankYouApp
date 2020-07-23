@@ -24,17 +24,21 @@ const App: React.FunctionComponent = () => {
   const [Login,setLogin]=useState<Boolean>(true);
 
   const WelcomeRoute=()=>{
+    if(name.length<1||password.length<1) {
+      setItem(<div style={{color:"red"}}>Please enter both name and password</div>)
+      return
+    }
     if(password===vpassword && name.toLowerCase()==="vinuth"){
       setLogin(false);
       setItem(<Vinuth/>)
     }
-    else if(password===shpassword &&name.toLowerCase()==="shishir"){
+    else if(password===shpassword && name.toLowerCase()==="shishir"){
       setLogin(false);
         setItem(<Shishir/>)
     }
     else if(password===srpassword && name.toLowerCase()==="srikanth"){
       setLogin(false);
-        setItem(<Srikanth/>)
+      setItem(<Srikanth/>)
     }
 
     else{
@@ -44,7 +48,7 @@ const App: React.FunctionComponent = () => {
     
   }
   return (
-    <div className="App">
+    <div className="App" >
     <Stack horizontal tokens={stackTokens} styles={stackStyles}>
       <Stack {...columnProps}>
         {Login &&
@@ -52,9 +56,9 @@ const App: React.FunctionComponent = () => {
         <TextField label="UserName " required  onChange={(e)=>{//@ts-ignore
          setName(e.target.value)}} />
         <TextField label="Password " required type="password" onChange={(e)=>{//@ts-ignore
-        setPassword(e.target.value)}}
+        setPassword(e.target.value)}} onEnter={()=>{WelcomeRoute()}}
         />
-        <PrimaryButton text="Welcome!" color="#333333" onClick={()=>{WelcomeRoute()}}/>
+        <PrimaryButton text="Welcome!" color="#333333" onClick={()=>{WelcomeRoute()}} />
         </>}
         {item}
       </Stack>
