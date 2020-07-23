@@ -29,9 +29,11 @@ const App: React.FunctionComponent = () => {
       setItem(<Vinuth/>)
     }
     else if(password===shpassword &&name.toLowerCase()==="shishir"){
+      setLogin(false);
         setItem(<Shishir/>)
     }
     else if(password===srpassword && name.toLowerCase()==="srikanth"){
+      setLogin(false);
         setItem(<Srikanth/>)
     }
 
