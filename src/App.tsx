@@ -15,9 +15,9 @@ const columnProps: Partial<IStackProps> = {
 const App: React.FunctionComponent = () => {
   const [name,setName]=useState<String>("");
   const [password,setPassword]=useState<String>("");
-  const vpassword="vinuth";
-  const shpassword="shishir";
-  const srpassword="srikanth";
+  const vpassword="vimadinu";
+  const shpassword="shiarora";
+  const srpassword="srkandu";
   const [item,setItem]=useState(
     <div></div>
   );
