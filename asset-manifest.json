@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ThankYouApp/static/css/main.4d633967.chunk.css",
+    "main.js": "/ThankYouApp/static/js/main.326456a2.chunk.js",
+    "main.js.map": "/ThankYouApp/static/js/main.326456a2.chunk.js.map",
+    "runtime-main.js": "/ThankYouApp/static/js/runtime-main.cd3e7eac.js",
+    "runtime-main.js.map": "/ThankYouApp/static/js/runtime-main.cd3e7eac.js.map",
+    "static/js/2.aedae7d5.chunk.js": "/ThankYouApp/static/js/2.aedae7d5.chunk.js",
+    "static/js/2.aedae7d5.chunk.js.map": "/ThankYouApp/static/js/2.aedae7d5.chunk.js.map",
+    "index.html": "/ThankYouApp/index.html",
+    "precache-manifest.dca759cd2be0ae84e28324d7a4bf101b.js": "/ThankYouApp/precache-manifest.dca759cd2be0ae84e28324d7a4bf101b.js",
+    "service-worker.js": "/ThankYouApp/service-worker.js",
+    "static/css/main.4d633967.chunk.css.map": "/ThankYouApp/static/css/main.4d633967.chunk.css.map",
+    "static/js/2.aedae7d5.chunk.js.LICENSE.txt": "/ThankYouApp/static/js/2.aedae7d5.chunk.js.LICENSE.txt",
+    "static/media/Devashish.png": "/ThankYouApp/static/media/Devashish.5facc3f9.png",
+    "static/media/Prmeher.jpg": "/ThankYouApp/static/media/Prmeher.abd0de9c.jpg",
+    "static/media/Sahil.png": "/ThankYouApp/static/media/Sahil.eb8df355.png",
+    "static/media/Sumanasa.jpg": "/ThankYouApp/static/media/Sumanasa.b02c8f56.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd3e7eac.js",
+    "static/js/2.aedae7d5.chunk.js",
+    "static/css/main.4d633967.chunk.css",
+    "static/js/main.326456a2.chunk.js"
+  ]
+}
